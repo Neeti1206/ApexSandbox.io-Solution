@@ -2,12 +2,13 @@ public Boolean sumEquals(Integer a, Integer b, Integer c) {
     //code here
 
     Integer temp ;
-    if(a!= null && b!= null){
+    if(a== null || b== null)
+    return null;
      temp = a+b;
 
     if (temp == c){
         return true;
     }
     else{return false;}
-    }
+    
 }
