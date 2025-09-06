@@ -1,0 +1,13 @@
+public Boolean sumEquals(Integer a, Integer b, Integer c) {
+    //code here
+
+    Integer temp ;
+    if(a!= null && b!= null){
+     temp = a=b;
+
+    if (temp == c){
+        return true;
+    }
+    else{return false;}
+    }
+}
