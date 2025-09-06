@@ -2,7 +2,7 @@ public String aOrAn(String word) {
     //code here
     if(word.isEmpty()) return null;
 
-        if(word.startsWith('a') )
+        if(word.toLowerCase().startsWith('a') ||word.toLowerCase().startsWith('e') || word.toLowerCase().startsWith('i') || word.toLowerCase().startsWith('o') || word.toLowerCase().startsWith('u'))
 
         return 'an '+ word;
         else
