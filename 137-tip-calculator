@@ -2,5 +2,5 @@ public Decimal computeTip(Decimal total, Integer percent) {
     //code here
     if(total == null || percent == null) return null;
 
-        return total - (total * (percent/100));
+        return total * ((Decimal)percent/100);
 }
