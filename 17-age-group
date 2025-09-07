@@ -1,7 +1,7 @@
 public String ageGroup(Integer n) {
     //code here
 
-    if(n == null || n > 0){ return null;}
+    if(n == null || n < 0){ return null;}
 
     if (n >= 0 && n <= 1){
         return 'Infant';
