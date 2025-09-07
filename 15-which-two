@@ -3,8 +3,6 @@ public String whichTwo(Integer a, Integer b, Integer c) {
     if(a== null || b == null || c == null)
         return null;
 
-    temp = a+b;
-
     if(a+b == c){
         return 'c';
     }
