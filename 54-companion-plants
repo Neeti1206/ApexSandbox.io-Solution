@@ -12,7 +12,9 @@ public Boolean companionPlants(String plant1, String plant2) {
     || p1 == 'onions' && p2 == 'tomatoes'
     || p2 == 'onions' && p1 == 'tomatoes'
     || p2 == 'onions' && p1 == 'lettuce'
-    || p2 == 'lettuce' && p1 == 'cucumbers'){
+    || p2 == 'lettuce' && p1 == 'cucumbers'
+    || p1 == 'onions' && p2 == 'carrots'
+    || p2 == 'onions' && p1 == 'carrots' ){
         return true;
     }
     else {
