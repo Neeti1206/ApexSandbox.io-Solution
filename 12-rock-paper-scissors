@@ -24,7 +24,7 @@ public Integer rockPaperScissors(String player1, String player2) {
         else if (p1Move.equals('scissors') && p2Move.equals('rock')){
             return 2;
         }
-        else if(p1Move.equals('rock') &&  p2Move.equals( == 'scissors')){
+        else if(p1Move.equals('rock') &&  p2Move.equals('scissors')){
             return 1;
         }
 }
