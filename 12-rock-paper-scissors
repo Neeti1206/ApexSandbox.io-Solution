@@ -7,10 +7,10 @@ public Integer rockPaperScissors(String player1, String player2) {
         String p1Move = player1.toLowerCase();
         String p2Move = player2.toLowerCase();
 
-    if(p1Move.equals(p2Move) 
+    if(p1Move.equals(p2Move) )
         {return 0;}
         else if(p1Move.equals('rock') && p2Move.equals('paper'){
-            retrun 2;
+            return 2;
         }
         else if (p1Move.equals('scissors') && p2Move.equals( 'paper'){
             return 1;
