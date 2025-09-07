@@ -1,0 +1,21 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    //code here
+    if(plant1 == null || plant2 == null){
+        return null;
+    }
+
+    String p1 = plant1.toLowerCase();
+    String p2 = plant2.toLowerCase()
+
+    if(p1 == 'lettuce' && p2 == 'cucumbers' 
+    || p1 == 'onions' && p2 == 'lettuce'
+    || p1 == 'onions' && p2 == 'tomatoes'
+    || p2 == 'onions' && p1 == 'tomatoes'
+    || p2 == 'onions' && p1 == 'lettuce'
+    || p2 == 'lettuce' && p1 == 'cucumbers'){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
