@@ -9,22 +9,22 @@ public Integer rockPaperScissors(String player1, String player2) {
 
     if(p1Move.equals(p2Move) )
         {return 0;}
-        else if(p1Move.equals('rock') && p2Move.equals('paper'){
+        else if(p1Move.equals('rock') && p2Move.equals('paper')){
             return 2;
         }
-        else if (p1Move.equals('scissors') && p2Move.equals( 'paper'){
+        else if (p1Move.equals('scissors') && p2Move.equals( 'paper')){
             return 1;
         }
-        else if (p1Move.equals('paper') && p2Move.equals('scissors'){
+        else if (p1Move.equals('paper') && p2Move.equals('scissors')){
             return 2;
         }
-        else if(p1Move.equals('paper') && p2Move.equals('rock'){
+        else if(p1Move.equals('paper') && p2Move.equals('rock')){
             return 1;
         }
-        else if (p1Move.equals('scissors') && p2Move.equals('rock'){
+        else if (p1Move.equals('scissors') && p2Move.equals('rock')){
             return 2;
         }
-        else if(p1Move.equals('rock') &&  p2Move.equals( == 'scissors'){
+        else if(p1Move.equals('rock') &&  p2Move.equals( == 'scissors')){
             return 1;
         }
 }
