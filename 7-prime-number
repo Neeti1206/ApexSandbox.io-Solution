@@ -3,7 +3,7 @@ public Boolean isPrime(Integer num) {
     if(num == null){
         return null;
     }
-    if (Math.mod(num,2) == 0 || Math.mod(num,5) || Math.mod(num,3)){
+    if (Math.mod(num,2) == 0 || Math.mod(num,5)==0 || Math.mod(num,3)==0){
         return true;
     }else{
         return false;
