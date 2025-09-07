@@ -3,7 +3,7 @@ public String evenOrOdd(Integer num) {
     if(num == null)
     return null;
 
-    Integer temp = Maths.abs(num);
+    Integer temp = Math.abs(num);
     if(Math.mod(temp,2) == 0)
         {
             return 'even';
