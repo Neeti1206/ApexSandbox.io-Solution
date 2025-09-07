@@ -22,4 +22,7 @@ public Integer rockPaperScissors(String player1, String player2) {
     ) {
         return 2; // Player 2 wins
     } 
+    else {
+        return null; // Invalid input
+    }
 }
