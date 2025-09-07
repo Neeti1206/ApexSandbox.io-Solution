@@ -1,0 +1,18 @@
+public String whichTwo(Integer a, Integer b, Integer c) {
+    //code here
+    if(a== null || b == null || c == null)
+        return null;
+
+    temp = a+b;
+
+    if(a+b == c){
+        return 'c';
+    }
+   else if(b+c == a){
+        return 'a';
+   }
+    else if(a+c== b){
+    return 'c';
+    }
+    else{return '';}
+}
