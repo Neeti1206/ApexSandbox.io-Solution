@@ -1,23 +1,27 @@
 public Integer rockPaperScissors(String player1, String player2) {
     //code here
+     if (player1 == null || player2 == null) {
+        return null;
+    }
 
-    if(player1 == null || player2 == null){
-        return null;}
+    String p1Move = player1.toLowerCase();
+    String p2Move = player2.toLowerCase();
 
-        String p1Move = player1.toLowerCase();
-        String p2Move = player2.toLowerCase();
-
-    if(p1Move.equals(p2Move) )
-        {return 0;}
-        else if(p1Move.equals('rock') && p2Move.equals('paper')
-        || p1Move.equals('paper') && p2Move.equals('scissors')
-        || p1Move.equals('scissors') && p2Move.equals('rock')){
-            return 2;
-        }
-        else if (p1Move.equals('scissors') && p2Move.equals('paper')
-        || p1Move.equals('paper') && p2Move.equals('rock') 
-        || p1Move.equals('rock') &&  p2Move.equals('scissors')){
-            return 1;
-        }
-        
+    if (p1Move == p2Move) {
+        return 0; // Tie
+    } else if (
+        (p1Move == 'rock' && p2Move == 'scissors') ||
+        (p1Move == 'scissors' && p2Move == 'paper') ||
+        (p1Move == 'paper' && p2Move == 'rock')
+    ) {
+        return 1; // Player 1 wins
+    } else if (
+        (p1Move == 'rock' && p2Move == 'paper') ||
+        (p1Move == 'scissors' && p2Move == 'rock') ||
+        (p1Move == 'paper' && p2Move == 'scissors')
+    ) {
+        return 2; // Player 2 wins
+    } else {
+        return null; // Invalid input
+    }
 }
