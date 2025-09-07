@@ -21,7 +21,5 @@ public Integer rockPaperScissors(String player1, String player2) {
         (p1Move == 'paper' && p2Move == 'scissors')
     ) {
         return 2; // Player 2 wins
-    } else {
-        return null; // Invalid input
-    }
+    } 
 }
