@@ -1,10 +1,10 @@
 public String nameFromEmail(String email) {
     //code here
-    if(email == null ){
+     if (email == null || !email.contains('.') || !email.contains('@')) {
         return null;
     }
 
     String firstName = substringBefore(email,'.');
-    String lastName = sybstringBetween(email,'.','@');
+    String lastName = substringBetween(email,'.','@');
     return firstName.toUpperCase()+' '+lastName.toUpperCase();
 }
