@@ -1,19 +1,16 @@
 public Boolean isPrime(Integer num) {
     //code 
-    Boolean isPrime = false;
+    //Boolean isPrime = false;
     if(num == null || num <= 1){
         return null;
     }
      for(Integer i=2; i <= Math.floor(Math.sqrt(num)).intValue(); i++){
 
         if (Math.mod(num,i) == 0){
-            isPrime = false;
-            break;
-    }else{
-        isPrime = true;
-
+            return false;
+            
     }
    
 }
-     return isPrime;
+     return true;
 }
