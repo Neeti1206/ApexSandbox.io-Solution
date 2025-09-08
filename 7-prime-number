@@ -12,6 +12,7 @@ public Boolean isPrime(Integer num) {
         isPrime = true;
 
     }
-    return isPrime;
+   
 }
+     return isPrime;
 }
