@@ -10,6 +10,8 @@ public Boolean isPrime(Integer num) {
             break;
     }else{
         isPrime = true;
+
     }
+    return isPrime;
 }
 }
