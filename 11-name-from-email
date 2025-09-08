@@ -4,7 +4,7 @@ public String nameFromEmail(String email) {
         return null;
     }
 
-    String firstName = substringBefore(email,'.');
-    String lastName = substringBetween(email,'.','@');
+    String firstName = email.substringBefore('.');
+    String lastName = email.substringBetween('.','@');
     return firstName.toUpperCase()+' '+lastName.toUpperCase();
 }
